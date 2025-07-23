@@ -164,28 +164,121 @@ img {
   overflow: hidden;
 }
 
-
-.languages .flex{
-    flex-wrap: wrap;
+.languages .flex {
+  flex-wrap: wrap;
 }
 
+.languages .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+  transition: transform 0.2s ease-in;
+}
 
-.languages .card{
+.languages h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.languages .card:hover {
+  transform: translateY(-15px);
+}
+
+/* features showcase */
+
+.features-showcase {
+   height: 250px;
+  color: white;
+   
+  position: relative;
+  background-color: var(--primary-color);
+ 
+}
+
+.features-showcase .flex{
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+}
+
+.features-showcase h1{
+    font-size: 50px;
+}
+
+.features-showcase p{
+    max-width: 600px;
+}
+
+.features-showcase img{
+    width: 200px;
+}
+
+.about-platform{
+    padding: 25px;
+}
+.about-platform .flex{
+display: flex;
+    align-items: center;
+   justify-content: space-between;
+}
+
+.about-platform h2{
+    font-size: 28px;
+}
+.about-platform p{
+    max-width: 500px;
+}
+
+.about-platform img{
+    width: 300px;
+}
+
+/* more-features */
+
+
+/* footer */
+.footer a {
+  margin: 0 10px;
+}
+
+/* tablets and below */
+
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .cli .grid,
+  .stats .grid,
+  .cloud .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .showcase {
+    height: auto;
+  }
+
+  .showcase .showcase-text {
     text-align: center;
-    margin:18px 10px 40px;
-    transition: transform 0.2s ease-in;
+    margin-top: 40px;
+  }
+
+  .showcase .showcase-form {
+    justify-self: center;
+    margin: auto;
+  }
+  .cli .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
 }
 
-.languages h4{
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.languages .card:hover{
-    transform: translateY(-15px)
-}
-
-
-.footer a{
-    margin: 0 10px;
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+  .navbar .flex {
+    flex-direction: column;
+  }
+  .navbar ul {
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }
