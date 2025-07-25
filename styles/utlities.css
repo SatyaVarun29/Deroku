@@ -58,6 +58,9 @@
   transform: scale(0.98);
 }
 
+hr{
+  width: 220px;
+}
 /* background & colured buttons */
 .bg-primary,
 .btn-primary {
