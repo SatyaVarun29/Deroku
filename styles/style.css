@@ -258,18 +258,33 @@ display: flex;
 }
 
 .about-docs{
-  height: 180px;
-  padding: 30px;
+  height: 250px;
+  
+  
+}
+
+.about-docs img{
+  width: 200px;
+  justify-self: flex-end;
 }
 
 .docs-sidebar{
   display: inline-block;
   margin: 40px 80px;
+  padding: 35px 20px;
+  position: relative;
 }
 
-.docs-sidebar {
-  padding: 35px 20px;
+.right-bar{
+  position: absolute;
+  left:360px;
+  top:400px
 }
+
+.right-bar p{
+  max-width: 700px;
+}
+
 
 
 /* footer */
