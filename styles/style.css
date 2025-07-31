@@ -268,22 +268,16 @@ display: flex;
   justify-self: flex-end;
 }
 
-.docs-sidebar{
-  display: inline-block;
-  margin: 40px 80px;
-  padding: 35px 20px;
-  position: relative;
+.main-docs .grid:first-child{
+ grid-column: 1/span 1/2
+  
+}
+.main-docs .grid:nth-child(1){
+  grid-column: 1/ span 3;
 }
 
-.right-bar{
-  position: absolute;
-  left:360px;
-  top:350px
-}
 
-.right-bar p{
-  max-width: 700px;
-}
+
 
 
 
