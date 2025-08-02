@@ -58,7 +58,7 @@
   transform: scale(0.98);
 }
 
-hr{
+hr {
   width: 220px;
 }
 /* background & colured buttons */
@@ -84,8 +84,12 @@ hr{
   color: #000;
 }
 
-.bg-dark a{
-    color: #fff;
+.text-primary {
+  color: var(--primary-color);
+}
+
+.bg-dark a {
+  color: #fff;
 }
 
 .lead {
