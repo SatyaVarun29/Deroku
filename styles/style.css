@@ -275,8 +275,6 @@ img {
   border-bottom: 1px solid #ccc;
 }
 
-
-
 .card .alert-success {
   font-weight: bold;
   padding: 10px 20px;
@@ -307,10 +305,27 @@ pre {
   .showcase .grid,
   .cli .grid,
   .stats .grid,
-  .cloud .grid {
+  .cloud .grid,
+  .more-features .grid,
+  .about-docs .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
+
+  .features-showcase {
+    height: 420px;
+    padding: 30px;
+  }
+
+  .features-showcase .flex,
+  .about-platform .flex,
+  .more-features .flex {
+    flex-direction: column;
+   
+    text-align: center;
+    overflow: visible;
+  }
+
   .showcase {
     height: auto;
   }
@@ -328,11 +343,33 @@ pre {
     grid-column: 1;
     grid-row: 1;
   }
+
+  .more-features .grid > *:first-child,
+  .more-features .grid > *:nth-child(2) {
+    grid-column: auto;
+  }
+
+  .about-docs {
+    height: 380px;
+  }
+
+  .about-docs img {
+    justify-self: center;
+  }
+
+  .about-docs .grid {
+    text-align: center;
+  }
+
+
+  .main-docs .grid{
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 500px) {
   .navbar {
-    height: 110px;
+    height: 120px;
   }
   .navbar .flex {
     flex-direction: column;
